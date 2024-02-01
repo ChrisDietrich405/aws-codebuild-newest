@@ -1,4 +1,6 @@
-version: 0.2
+#version is ? 
+
+version: 0.2 
 phases:
   install:   
     runtime-versions:
@@ -11,7 +13,7 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 sync dist/ s3://awscodebuild1111
+      - aws s3 sync dist/ s3://aws-codebuild-newest
 artifacts:
   files:
     - "**/*"
