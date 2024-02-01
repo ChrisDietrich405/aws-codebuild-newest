@@ -1,4 +1,4 @@
-#version is ? 
+#version is codebuild version
 
 version: 0.2 
 phases:
